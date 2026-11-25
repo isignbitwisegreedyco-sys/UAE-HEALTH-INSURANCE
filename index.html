@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#30286d">
+    <meta name="description" content="Swasthya Shuraksha helps UAE residents explore and compare sample health-cover profiles around what matters to them.">
+    <title>Swasthya Shuraksha — Cover, considered</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <!--
+      Direction — Swasthya Shuraksha Comparison Exchange: make side-by-side differences the first thing shoppers can understand.
+      World — ink violet, bright periwinkle, signal lime, and saffron; crisp type, ledger rules, scale marks, and hard-edged comparison rows.
+      First view — “Health cover, weighed against what matters.” leads directly to an honest sample comparison.
+      Interaction — household, emirate, and age shape the brief; priority reorders sample lenses; shoppers can compare profiles and make a local demo brief.
+      Responsive — wide screens keep the comparison board in columns; narrow screens stack profiles and use a scrollable, labeled comparison table.
+    -->
+    <div class="demo-ribbon">
+      <span class="demo-pip" aria-hidden="true"></span>
+      Prototype content only <span class="ribbon-divider" aria-hidden="true">/</span> No live insurer offers or prices
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Swasthya Shuraksha home">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true">
+          <path d="M21 7v25M8 13h26M12 13 5 24h14l-7-11Zm18 0-7 11h14l-7-11ZM13 34h16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="21" cy="7" r="2.4" fill="#d6f36a"/>
+        </svg>
+        <span class="brand-name">Swasthya Shuraksha</span>
+        <span class="brand-caption">COVER, CONSIDERED</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Open navigation</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="#quote">Compare options</a>
+        <a href="#comparison-guide">What to compare</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+      <a class="header-cta" href="#quote">Start comparing <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="hero-location"><span aria-hidden="true">◆</span> UAE health cover marketplace demo</p>
+          <h1 id="hero-title">Health cover,<br>weighed against<br><em>what matters.</em></h1>
+          <p class="hero-description">Start with your situation. Compare the questions behind the plan, not just the headline.</p>
+          <a class="button button-lime" href="#quote">Build my comparison <span aria-hidden="true">→</span></a>
+          <div class="hero-points">
+            <span><b>01</b> Set your priorities</span>
+            <span><b>02</b> Compare sample profiles</span>
+          </div>
+        </div>
+
+        <div class="hero-board-wrap">
+          <div class="balance-stamp" aria-hidden="true">
+            <svg viewBox="0 0 90 90"><path d="M45 13v59M22 30h46M28 30 17 49h22L28 30Zm34 0L51 49h22L62 30ZM33 75h24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="hero-board">
+            <div class="board-heading">
+              <span class="board-label">SWASTHYA / COVER BOARD</span>
+              <span class="demo-tag">SAMPLE</span>
+            </div>
+            <div class="board-title-row">
+              <h2>Three ways<br>to start looking.</h2>
+              <span class="board-coordinate">UAE<br>HEALTH</span>
+            </div>
+            <div class="board-grid" role="table" aria-label="Illustrative comparison lenses, not policy terms">
+              <div class="board-row board-head" role="row">
+                <span role="columnheader">Lens</span><span role="columnheader">Core</span><span role="columnheader">Family</span><span role="columnheader">Choice</span>
+              </div>
+              <div class="board-row" role="row">
+                <span role="rowheader">Provider list</span><span role="cell">Check</span><span role="cell">Check</span><span role="cell">Compare</span>
+              </div>
+              <div class="board-row" role="row">
+                <span role="rowheader">Cost share</span><span role="cell">Review</span><span role="cell">Review</span><span role="cell">Review</span>
+              </div>
+              <div class="board-row" role="row">
+                <span role="rowheader">Benefit limits</span><span role="cell">Read</span><span role="cell">Read</span><span role="cell">Read</span>
+              </div>
+            </div>
+            <p class="board-footnote"><span aria-hidden="true">✳</span> Topics to compare; terms vary by policy.</p>
+          </div>
+          <div class="board-orbit orbit-one" aria-hidden="true"></div>
+          <div class="board-orbit orbit-two" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="quote-section" id="quote" aria-labelledby="quote-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-index"><span>01</span> Start with your situation</p>
+            <h2 id="quote-title">Build a comparison<br>around your life.</h2>
+          </div>
+          <p class="section-aside">A few practical details help put the right questions in view. No medical information is needed for this demo.</p>
+        </div>
+
+        <div class="quote-layout">
+          <section class="quote-console" aria-label="Health cover comparison builder">
+            <div class="console-header">
+              <span class="console-title"><span class="console-indicator" aria-hidden="true"></span> Your comparison brief</span>
+              <span class="console-step" id="step-count" aria-live="polite">STEP 1 OF 3</span>
+            </div>
+            <ol class="progress-track" aria-label="Comparison steps">
+              <li class="is-current" data-step-indicator="1" aria-current="step"><span>1</span><small>Household</small></li>
+              <li data-step-indicator="2"><span>2</span><small>Priorities</small></li>
+              <li data-step-indicator="3"><span>3</span><small>Options</small></li>
+            </ol>
+            <form id="quote-form">
+              <section class="step-panel" data-panel="1" aria-labelledby="household-title">
+                <h3 id="household-title" tabindex="-1">Who are you comparing for?</h3>
+                <p class="step-description">Choose a starting point. You can adjust it later.</p>
+                <fieldset class="choice-fieldset">
+                  <legend>People to cover</legend>
+                  <div class="household-options">
+                    <label class="household-choice">
+                      <input type="radio" name="household" value="Individual" required>
+                      <span class="household-card"><span class="household-icon" aria-hidden="true">1</span><span><strong>Individual</strong><small>Just me</small></span><i aria-hidden="true"></i></span>
+                    </label>
+                    <label class="household-choice">
+                      <input type="radio" name="household" value="Family" required>
+                      <span class="household-card"><span class="household-icon household-icon-family" aria-hidden="true">2+</span><span><strong>Family</strong><small>More than one person</small></span><i aria-hidden="true"></i></span>
+                    </label>
+                  </div>
+                </fieldset>
+                <label class="field-label" for="emirate">Where do you live?</label>
+                <span class="select-frame">
+                  <select id="emirate" name="emirate" required>
+                    <option value="" selected disabled>Choose an emirate</option>
+                    <option>Abu Dhabi</option><option>Dubai</option><option>Sharjah</option>
+                    <option>Ajman</option><option>Umm Al Quwain</option>
+                    <option>Ras Al Khaimah</option><option>Fujairah</option>
+                  </select>
+                  <span aria-hidden="true">⌄</span>
+                </span>
+                <div class="step-actions">
+                  <span class="form-hint">Only used to shape this local demo.</span>
+                  <button class="button button-dark" type="button" data-next="2">Next <span aria-hidden="true">→</span></button>
+                </div>
+              </section>
+
+              <section class="step-panel" data-panel="2" aria-labelledby="priorities-title" hidden>
+                <h3 id="priorities-title" tabindex="-1">What do you want to weigh first?</h3>
+                <p class="step-description">Choose a lens for your sample comparison—not a policy recommendation.</p>
+                <label class="field-label" for="age-band">Age of the oldest person to cover</label>
+                <span class="select-frame">
+                  <select id="age-band" name="ageBand" required>
+                    <option value="" selected disabled>Choose an age range</option>
+                    <option>Under 25</option><option>25–34</option><option>35–44</option>
+                    <option>45–54</option><option>55 or above</option>
+                  </select>
+                  <span aria-hidden="true">⌄</span>
+                </span>
+                <fieldset class="choice-fieldset lens-fieldset">
+                  <legend>Comparison lens</legend>
+                  <div class="lens-options">
+                    <label><input type="radio" name="priority" value="Provider choice" required><span>Provider choice</span></label>
+                    <label><input type="radio" name="priority" value="Everyday costs" required><span>Everyday costs</span></label>
+                    <label><input type="radio" name="priority" value="Family benefits" required><span>Family benefits</span></label>
+                  </div>
+                </fieldset>
+                <div class="step-actions">
+                  <button class="button button-quiet" type="button" data-back="1"><span aria-hidden="true">←</span> Back</button>
+                  <button class="button button-dark" type="button" data-next="3">See sample options <span aria-hidden="true">→</span></button>
+                </div>
+              </section>
+
+              <section class="step-panel results-panel" data-panel="3" aria-labelledby="options-title" hidden>
+                <div class="results-heading">
+                  <div>
+                    <p class="results-label">SAMPLE PROFILES / NOT LIVE PLANS</p>
+                    <h3 id="options-title" tabindex="-1">Choose what to compare.</h3>
+                  </div>
+                  <button class="edit-link" type="button" data-back="1">Edit brief</button>
+                </div>
+                <p class="step-description">Illustrative comparison lenses only. No insurer names, benefits, or premiums are represented.</p>
+                <div class="summary-chips" id="route-summary" aria-live="polite"></div>
+                <p class="match-note" id="match-note"></p>
+                <div class="profile-list">
+                  <article class="profile-row" data-plan="essential">
+                    <span class="profile-marker marker-violet" aria-hidden="true">A</span>
+                    <div class="profile-detail">
+                      <div class="profile-name-line"><h4>Core check</h4><span class="sample-chip">DEMO PROFILE</span></div>
+                      <p>A focused first pass through routine-care categories and the details behind them.</p>
+                      <div class="profile-tags"><span>Provider list</span><span>Cost share</span><span>Limits</span></div>
+                    </div>
+                    <div class="profile-actions">
+                      <button class="profile-select" type="button" data-select-profile="essential" aria-pressed="false">Use this lens</button>
+                      <button class="compare-toggle" type="button" data-compare-profile="essential" aria-pressed="false">+ Compare</button>
+                    </div>
+                  </article>
+                  <article class="profile-row" data-plan="family">
+                    <span class="profile-marker marker-lime" aria-hidden="true">B</span>
+                    <div class="profile-detail">
+                      <div class="profile-name-line"><h4>Family balance</h4><span class="sample-chip">DEMO PROFILE</span></div>
+                      <p>A household-first lens for checking eligibility, dependants, and benefit limits.</p>
+                      <div class="profile-tags"><span>Household fit</span><span>Dependants</span><span>Limits</span></div>
+                    </div>
+                    <div class="profile-actions">
+                      <button class="profile-select" type="button" data-select-profile="family" aria-pressed="false">Use this lens</button>
+                      <button class="compare-toggle" type="button" data-compare-profile="family" aria-pressed="false">+ Compare</button>
+                    </div>
+                  </article>
+                  <article class="profile-row" data-plan="choice">
+                    <span class="profile-marker marker-orange" aria-hidden="true">C</span>
+                    <div class="profile-detail">
+                      <div class="profile-name-line"><h4>More choice</h4><span class="sample-chip">DEMO PROFILE</span></div>
+                      <p>A broader comparison lens for provider lists, referral rules, and cost sharing.</p>
+                      <div class="profile-tags"><span>Provider choice</span><span>Referrals</span><span>Cost share</span></div>
+                    </div>
+                    <div class="profile-actions">
+                      <button class="profile-select" type="button" data-select-profile="choice" aria-pressed="false">Use this lens</button>
+                      <button class="compare-toggle" type="button" data-compare-profile="choice" aria-pressed="false">+ Compare</button>
+                    </div>
+                  </article>
+                </div>
+                <div class="compare-actions">
+                  <span id="compare-count" aria-live="polite">Choose two or more profiles to compare.</span>
+                  <button class="button button-outline" id="compare-selected" type="button" disabled>Compare selected <span aria-hidden="true">↗</span></button>
+                </div>
+                <section class="compare-result" id="compare-result" aria-labelledby="compare-title" hidden>
+                  <div class="compare-result-heading">
+                    <h4 id="compare-title">Your side-by-side view</h4>
+                    <button class="text-button" type="button" id="clear-compare">Clear comparison</button>
+                  </div>
+                  <div class="table-scroll" id="comparison-table"></div>
+                </section>
+                <div class="selected-brief" id="selected-brief" hidden>
+                  <span class="selected-mark" aria-hidden="true">✓</span>
+                  <span><strong id="selected-profile-name"></strong><small>Selected as your comparison lens</small></span>
+                </div>
+                <div class="step-actions result-step-actions">
+                  <button class="button button-quiet" type="button" data-back="2"><span aria-hidden="true">←</span> Back</button>
+                  <button class="button button-dark" id="create-brief" type="submit" disabled>Build my demo brief <span aria-hidden="true">→</span></button>
+                </div>
+                <p class="demo-disclaimer">Illustrative demo: profiles are comparison prompts, not live plans or quotes. Your choices stay on this page.</p>
+                <div class="form-confirmation" id="form-confirmation" role="status" hidden>
+                  <span class="confirmation-mark" aria-hidden="true">✓</span>
+                  <div><strong>Your demo comparison is ready.</strong><p id="confirmation-copy"></p></div>
+                  <button class="start-again" type="button" id="start-again">Start again</button>
+                </div>
+              </section>
+            </form>
+          </section>
+
+          <aside class="comparison-aside">
+            <div class="aside-stamp" aria-hidden="true"><span>M</span></div>
+            <h3>One policy can look different from another.</h3>
+            <p>Look past a plan name. Compare its provider list, cost sharing, limits, and the wording that decides when benefits apply.</p>
+            <div class="aside-rule"></div>
+            <p class="aside-note"><span>Keep in mind</span> Exact cover and eligibility depend on each insurer and policy. Always verify the actual documents.</p>
+            <a href="#comparison-guide" class="aside-link">See the comparison checklist <span aria-hidden="true">↓</span></a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="comparison-guide" id="comparison-guide" aria-labelledby="guide-title">
+        <div class="guide-heading">
+          <p class="section-index"><span>02</span> Read the small print with a plan</p>
+          <h2 id="guide-title">Four things worth<br>putting side by side.</h2>
+        </div>
+        <div class="guide-ledger">
+          <article class="guide-row">
+            <span class="guide-index">01</span>
+            <h3>Provider network</h3>
+            <p>Check clinics and hospitals by name, location, and the kind of access you need.</p>
+            <span class="guide-marker marker-violet" aria-hidden="true">↗</span>
+          </article>
+          <article class="guide-row">
+            <span class="guide-index">02</span>
+            <h3>Cost sharing</h3>
+            <p>Review co-payments, deductibles, and any limits that may apply when you use care.</p>
+            <span class="guide-marker marker-lime" aria-hidden="true">↗</span>
+          </article>
+          <article class="guide-row">
+            <span class="guide-index">03</span>
+            <h3>Benefits & exclusions</h3>
+            <p>Read what is included, what is excluded, and how the policy defines each benefit.</p>
+            <span class="guide-marker marker-orange" aria-hidden="true">↗</span>
+          </article>
+          <article class="guide-row">
+            <span class="guide-index">04</span>
+            <h3>Eligibility & dependants</h3>
+            <p>Confirm who can be covered and which rules apply to your household or situation.</p>
+            <span class="guide-marker marker-blue" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="how-section" id="how-it-works" aria-labelledby="how-title">
+        <div class="how-title">
+          <p class="section-index"><span>03</span> A clearer way to shop</p>
+          <h2 id="how-title">From first question<br>to better informed.</h2>
+          <p>This prototype shows the comparison journey. A real marketplace would connect verified plan data and licensed insurance partners.</p>
+        </div>
+        <div class="how-steps">
+          <article><span class="how-number">01</span><h3>Share the basics</h3><p>Choose a household, emirate, age range, and what you want to compare.</p></article>
+          <article><span class="how-number">02</span><h3>Compare the details</h3><p>Use a shortlist to compare policy documents, networks, limits, and costs.</p></article>
+          <article><span class="how-number">03</span><h3>Choose your next step</h3><p>Review the real terms with a licensed provider before making a decision.</p></article>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="faq-heading">
+          <p class="section-index"><span>04</span> Good to know</p>
+          <h2 id="faq-title">Before you compare.</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Are these real health insurance plans?</summary>
+            <p>The three profiles are illustrative comparison lenses. The prototype has no live insurer, policy, premium, eligibility, or quote-service data.</p>
+          </details>
+          <details>
+            <summary>Does this demo send my details anywhere?</summary>
+            <p>Your choices are used for the on-page sample result and are not submitted or saved to a server. The flow does not ask for medical information.</p>
+          </details>
+          <details>
+            <summary>What should I verify before choosing a policy?</summary>
+            <p>Confirm the provider network, co-payments, deductibles, benefit limits, exclusions, eligibility, and full policy wording directly with the insurer or a licensed adviser.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand brand-footer" href="#top" aria-label="Swasthya Shuraksha home">
+        <svg class="brand-mark" viewBox="0 0 42 42" aria-hidden="true">
+          <path d="M21 7v25M8 13h26M12 13 5 24h14l-7-11Zm18 0-7 11h14l-7-11ZM13 34h16" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="21" cy="7" r="2.4" fill="#d6f36a"/>
+        </svg>
+        <span class="brand-name">Swasthya Shuraksha</span>
+      </a>
+      <p class="footer-tagline">Cover, considered.</p>
+      <p class="footer-disclaimer">Swasthya Shuraksha is an original, Indian-language-inspired concept name for this prototype, not an existing insurer or operating company. Sample profiles are not insurance products, advice, or a quote. Brand and product details require review before launch.</p>
+      <a href="#top" class="back-top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
